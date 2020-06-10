@@ -1,2 +1,2 @@
-#MSIT Core Competitive Programming Teams
+## MSIT Core Competitive Programming Teams
 - [x] Ayush Mahajan  
