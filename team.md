@@ -2,3 +2,4 @@
 - [x] Ayush Mahajan  
 - [x] Ritesh Rastogi
 - [x] Yash Preet
+- [x] Prince Gupta
