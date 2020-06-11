@@ -6,3 +6,4 @@
 - [x] Prince Gupta
 - [x] Ankit
 - [x] Ashwani Kumar Goyal
+- [x] Rohit Tyagi
