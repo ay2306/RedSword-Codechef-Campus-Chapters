@@ -10,3 +10,4 @@
 - [x] Manish Sharma
 - [x] Aayush Bhatnagar
 - [x] Pradhumn Panchal
+- [x] Harshdeep Singh
