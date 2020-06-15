@@ -9,3 +9,4 @@
 - [x] Aman Aggarwal
 - [x] Manish Sharma
 - [x] Aayush Bhatnagar
+- [x] Harshdeep Singh
