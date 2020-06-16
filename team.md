@@ -11,3 +11,4 @@
 - [x] Aayush Bhatnagar
 - [x] Pradhumn Panchal
 - [x] Harshdeep Singh
+- [x] Kunal Bisht
