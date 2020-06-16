@@ -4,7 +4,8 @@
 3. Write a tutorial for the data structure you learned along with editorial for any question you solved you thought was good.
 4. Benefits: You will be the go to person when we want to learn this DS/Algo
 5. Make edits in new branch
-
+6. Add Tutorial `topic.md` in Tutorials Folder
+Hints: You write tutorial/editorials in markdown.
 **Task Deadline:** June 22, 2020
 
 ### Task 1: Create a pull request here with following edits
