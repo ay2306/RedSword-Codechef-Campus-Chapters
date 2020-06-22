@@ -1,21 +1,21 @@
-#Rabin Karp Algorithm Tutorial
+# Rabin Karp Algorithm Tutorial
 
-##Introduction
+## Introduction
 Rabin Karp algorithm is used to efficiently search pattern in a string.
 Given an input string `text` and pattern `pat`, using this algorithm we can find substrings of `text` that are same as `pat`
 
-##Time Complexity
+## Time Complexity
 n = length of `text`
 m = length of `pat`
 Average Case: O(n + m)
 Worst Case: O(nm)
 
-##Key Idea
+## Key Idea
 Just like the naive algorithm for this problem, we will use a sliding window of size m, slide it through the give string and determine if it matches the pattern, but instead of matching the pattern character by character per window, we'll first check if their hash values are equal, if that is the case only then we can check equality per character.
 
 Hence we need to efficiently calculate the Hash values of the sliding values, this is the key idea of Rabin-Karp algorithm.
 
-###Hash Function
+### Hash Function
 Let's define the Radix of the string + pattern to be d, i.e if they contain only lowercase english letters, d = 26.
 Considering ASCII character encoding, d = 256.
 
@@ -37,7 +37,7 @@ hash(text[i + 1 ... i + m]) = (d(hash(text[i ... i + m - 1]) - text[i] * h) + te
 
 where h = d ^ (m - 1)
 
-##Implementation
+## Implementation
 ```c++
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -101,29 +101,29 @@ int main()
 }  
 ```
 
-##Question
+## Question
 A good question requiring usage of this algorithm is "Longest Duplicate Substring", it can be found at https://leetcode.com/problems/longest-duplicate-substring/
 
-###Problem Statement:
+### Problem Statement:
 Given a string S, consider all duplicated substrings: (contiguous) substrings of S that occur 2 or more times.  (The occurrences may overlap.)
 
 Return any duplicated substring that has the longest possible length.  (If S does not have a duplicated substring, the answer is "".)
 
-####Constraints:
+#### Constraints:
 1. 2 <= S.length <= 10^5
 2. S consists of only lowercase English letters
 
-###Editorial
+### Editorial
 
-####Key Idea:
+#### Key Idea:
 If there's a duplicate substring of length k, we only need to check if there is a duplicate substring of length > k.
 
-####Solution:
+#### Solution:
 Use Rabin-karp's algorithm to find if there's a duplicate string of length n/2. If there is one, we only need to check if there's a duplicate substring of length > n / 2, otherwise we need to check in length < n / 2. Hence apply binary search.
 
 Since only lowercase english letters are used, the radix (d) = 26.
 
-####Code:
+#### Code:
 ```c++
 class Solution {
     
